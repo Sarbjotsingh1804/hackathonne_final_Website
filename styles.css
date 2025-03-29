@@ -1,5 +1,5 @@
 html, body {
-    scroll-behavior: smooth;
+    
     margin: 0;
     padding: 0;
     width: 100%;
@@ -28,10 +28,13 @@ canvas {
 }
 
 body {
+    scroll-behavior: smooth;
     position: relative;
     z-index: 1; /* Ensures content is above the particles */
 }
-
+section {
+    scroll-margin-top: 80px; /* Adjust this value to match the height of your header */
+}
 .container {
     position: relative;
     z-index: 2; /* Ensures content is above the particles */
@@ -138,7 +141,7 @@ nav {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: var(--dark);
+    background-color: #3d2067;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     z-index: 99;

@@ -9,29 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                  <img src="logo.jpg" alt="HackFusion Logo">
-                  <span>HackFusion 2025</span>
-                </div>
-                <div class="nav-links">
-                  <a href="#home">Home</a>
-                  <a href="#problem">Problem</a>
-                  <a href="#prizes">Prizes</a>
-                  <a href="#guidelines">Guidelines</a>
-                  <a href="#faq">FAQ</a>
-                  <a href="#team">Team</a>
-                  <a href="#contact">Contact</a>
-                </div>
-                <div class="menu-toggle" id="menuToggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+  <header>
+        <div class="container" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+            <nav style="display: flex; align-items: center;">
+          <div class="logo" style="display: flex; align-items: center; text-align: center;">
+            <img src="logo.jpg" alt="HackFusion Logo" style="margin-right: 10px;">
+            <span>HackFusion 2025</span>
+          </div>
             </nav>
         </div>
-    </header>
-    <div class="mobile-nav" id="mobileNav">
+  </header>
+  <div class="mobile-nav" id="mobileNav">
         <a href="#home">Home</a>
         <a href="#problem">Problem</a>
         <a href="#prizes">Prizes</a>
@@ -39,863 +27,884 @@
         <a href="#faq">FAQ</a>
         <a href="#team">team</a>
         <a href="#contact">Contact</a>
-    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileNavLinks = mobileNav.querySelectorAll('a');
     
-    <section id="home" class="hero" >
-        <div class="container">
-            <p class="presented-by">InnoTech Presents</p>
-            <h1>Department of CSE(Data Science) and Information Science and Engineering, HackFusion 2025</h1>
-            <p>25 & 26th April 2025</p>
-            <p>A 2 days Innovation Marathon at GNDEC, Bidar Karnataka</p>
-            <div style="margin-top: 30px;">
-                <a href="#register" class="btn">Register Now</a>
-                <a href="#brochure" class="btn btn-outline">Download the Brochure</a>
-            </div>
-        </div>
-    </section>
-    <section class="countdown">
-        <div class="container">
-            <h2>Registration ends In</h2>
-            <div class="timer">
-                <div class="timer-box">
-                    <span id="days">00</span>
-                    <span>Days</span>
-                </div>
-                <div class="timer-box">
-                    <span id="hours">00</span>
-                    <span>Hours</span>
-                </div>
-                <div class="timer-box">
-                    <span id="minutes">00</span>
-                    <span>Minutes</span>
-                </div>
-                <div class="timer-box">
-                    <span id="seconds">00</span>
-                    <span>Seconds</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="brochure" class="brochure" >
-        <div class="container">
-            <div class="brochure-content">
-                <h2>Download the Brochure</h2>
-                <p>Get all the details you need! Download our brochure for a comprehensive guide to GNDECB HackFusion 2025, including event highlights, challenges, prizes, and participation details.</p>
-                <a href="#" class="btn">Download Brochure</a>
-            </div>
-        </div>
-    </section>
-    <script src="time.js"></script>
-    <section id="problem" class="problem-statement">
-        <div class="container">
-          <h2>Problem Statement</h2>
-          
-          <div class="statement-carousel">
-            <button class="carousel-arrow prev-arrow" aria-label="Previous slide">❮</button>
-            
-            <div class="statement-slides-container">
-              <!-- Slide 1 - Main Statement -->
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>1. Safety Detection Using Computer Vision</h3>
-                  <h4>Expected Outcome:</h4>
-                  <p>Develop a system that automatically detects safety hazards (e.g., without proper gear or unsafe behaviors) in real-time through image or video feeds.</p>
-                  <h4>Brief:</h4>
-                  <p>Develop a system that automatically detects safety hazards (e.g., without proper gear or unsafe behaviors) in real-time through image or video feeds.</p>
-                </div>
-              </div>
-              
-              <!-- Slide 2 - Task Details -->
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>2. Propensity to Convert Using Machine Learning</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Create a predictive model that identifies which leads or customers are most likely to convert based on historical and behavioral data.</p>
-                  <h4>Brief :</h4>
-                  <p>Design an ML model to analyze customer behavior and demographics to predict conversion probabilities. This helps marketing teams prioritize high-value leads.</p>
-                </div>
-              </div>
-              
-              <!-- Slide 3 - Technical Requirements -->
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>3. Customer Churn Prediction Using Machine Learning</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Develop a model to forecast customer churn with high accuracy, enabling proactive retention strategies.</p>
-                  <h4>Brief :</h4>
-                  <p>Implement machine learning techniques to identify patterns and risk factors leading to customer churn. The aim is to empower businesses with actionable insights to improve retention.</p>
-                </div>
-              </div>
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>4. Fraud Detection in Banking</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Deploy a system that can accurately detect fraudulent transactions in real-time, reducing financial losses and protecting customers.</p>
-                  <h4>Brief :</h4>
-                  <p>Utilize advanced ML algorithms to analyze transaction data for anomalies. The project should help banks flag potentially fraudulent activities promptly.</p>
-                </div>
-              </div>
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>5. Sentiment Analysis Using NLP</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Create an NLP tool that classifies sentiments (positive, negative, neutral) in customer reviews, social media, or survey responses.</p>
-                  <h4>Brief :</h4>
-                  <p>Leverage natural language processing to analyze textual data and extract sentiment insights. This can assist businesses in understanding customer emotions and improving products or services.</p>
-                </div>
-              </div>
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>6. Job Description Creation Using Generative AI</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Develop an AI-driven system that automatically generates job descriptions tailored to specific roles and industry requirements.</p>
-                  <h4>Brief :</h4>
-                  <p>Employ generative AI techniques to craft precise and engaging job descriptions. The solution should streamline the recruitment process and help HR teams attract the right talent.</p>
-                </div>
-              </div>
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>7. Content Creation for E-Commerce Using Generative AI</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Produce an AI system that generates product descriptions, promotional content, and social media posts, enhancing e-commerce engagement.</p>
-                  <h4>Brief :</h4>
-                  <p>Utilize generative AI to create compelling and optimized content for e-commerce platforms. The tool should help businesses save time and maintain consistent quality in their marketing content.</p>
-                </div>
-              </div>
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>8. Report Generation for Various Business Units Using Generative AI</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Automate the generation of detailed business reports, summarizing key metrics and insights across different departments.</p>
-                  <h4>Brief :</h4>
-                  <p>Build an AI tool that aggregates data from multiple sources and generates comprehensive reports. The project aims to reduce manual effort and improve decision-making with timely insights.</p>
-                </div>
-              </div>
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>9. RAG Chat Bots for Various Industry-Specific Requirements</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Develop Retrieval-Augmented Generation (RAG) chatbots tailored for specific industries to provide precise, context-aware responses.</p>
-                  <h4>Brief :</h4>
-                  <p>Create chatbots that integrate retrieval techniques with generative models to offer industry-specific solutions. These bots should enhance customer support and provide accurate information in specialized fields.</p>
-                </div>
-              </div>
-              <div class="statement-slide active">
-                <div class="statement-content">
-                  <h3>10. Review Classification Using AI</h3>
-                  <h4>Expected Outcome :</h4>
-                  <p>Implement an AI solution that classifies reviews into categories (e.g., positive, negative, neutral) and extracts key themes or issues.</p>
-                  <h4>Brief :</h4>
-                  <p>Design a system that automates the classification of customer reviews and identifies critical trends. The solution helps businesses quickly understand feedback and improve customer satisfaction.</p>
-                </div>
-              </div>
-              
-            </div>
-            
-            <button class="carousel-arrow next-arrow" aria-label="Next slide">❯</button>
-            
-            <!-- Navigation Dots -->
-            <div class="statement-dots">
-              <span class="statement-dot active" data-slide="0"></span>
-              <span class="statement-dot" data-slide="1"></span>
-              <span class="statement-dot" data-slide="2"></span>
-              <span class="statement-dot" data-slide="3"></span>
-              <span class="statement-dot" data-slide="4"></span>
-              <span class="statement-dot" data-slide="5"></span>
-              <span class="statement-dot" data-slide="6"></span>
-              <span class="statement-dot" data-slide="7"></span>
-              <span class="statement-dot" data-slide="8"></span>
-              <span class="statement-dot" data-slide="9"></span>
-              <span class="statement-dot" data-slide="10"></span>
-            </div>
-          </div>
-        </div>
-    </section>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const slides = document.querySelectorAll('.statement-slide');
-        const dots = document.querySelectorAll('.statement-dot');
-        const prevBtn = document.querySelector('.prev-arrow');
-        const nextBtn = document.querySelector('.next-arrow');
-        let currentSlide = 0;
-    
-        // Function to show a specific slide
-        function showSlide(index) {
-        // Hide all slides
-        slides.forEach(slide => slide.classList.remove('active'));
-        dots.forEach(dot => dot.classList.remove('active'));
-        
-        // Ensure index stays within bounds
-        if(index < 0) {
-            index = slides.length - 1;
-        } else if(index >= slides.length) {
-            index = 0;
-        }
-        
-        // Show the selected slide
-        slides[index].classList.add('active');
-        dots[index].classList.add('active');
-        currentSlide = index;
-        }
-    
-        // Click event for dots
-        dots.forEach(dot => {
-        dot.addEventListener('click', function() {
-            const slideIndex = parseInt(this.getAttribute('data-slide'));
-            showSlide(slideIndex);
-        });
+        // Toggle mobile menu visibility
+        menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
         });
     
-        // Previous button click
-        prevBtn.addEventListener('click', () => {
-        showSlide(currentSlide - 1);
-        });
-    
-        // Next button click
-        nextBtn.addEventListener('click', () => {
-        showSlide(currentSlide + 1);
-        });
-    
-        // Initialize first slide
-        showSlide(0);
-        
-        // Optional: Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-        if(e.key === 'ArrowLeft') {
-            showSlide(currentSlide - 1);
-        } else if(e.key === 'ArrowRight') {
-            showSlide(currentSlide + 1);
-        }
+        // Close mobile menu when a link is clicked
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('open');
+            });
         });
     });
-    </script>
-    <section id="prizes" class="prizes" >
-        <div class="container">
-            <h2>Prizes & Rewards</h2>
-            <div class="prize-grid">
-                <div class="prize-card">
-                    <div class="prize-amount">₹7000</div>
-                    <p>First Prize</p>
-                </div>
-                <div class="prize-card">
-                    <div class="prize-amount">₹5000</div>
-                    <p>Second Prize</p>
-                </div>
-                <div class="prize-card">
-                    <div class="prize-amount">₹3000</div>
-                    <p>Third Prize</p>
-                </div>
-            </div>
-            <p style="margin-top: 30px; font-size: 0.95rem; padding: 0 15px; color: white;">Get a designated participation certificate to showcase your skills and gain exclusive networking opportunities with mentors, and like-minded innovators.</p>
-        </div>
-    </section>
-    <section id="guidelines" class="guidelines-section">
-        <div class="container">
-          <h2>Event Guidelines</h2>
-          
-          <!-- Guideline Item 1 -->
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>General Information</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-              <p>The hackathon is open to all college students nationwide. Participants must be currently enrolled in an accredited educational institution.</p>
-              <ul>
-                <li>The hackathon will be a 2-day event, not a continuous 24 or 12-hour hackathon.</li>
-                <li>Participants must vacate the venue at night and move to the provided accommodation.</li>
-                <li>Registration opens on March 29th, 2025.</li>
-                <li>Problem statements will be released on March 30th, 2025, and teams will have time to work on their solutions until April 18th, 2025.</li>
-                <li>The hackathon will be conducted offline at the designated venue.</li>
-                <li>Teams must strictly adhere to the timeline and schedule set by the organizing committee.</li>
-              </ul>
-            </div>
-          </div>
-          
-          <!-- Guideline Item 2 -->
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>Registration & Participation</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-                <ul>
-                <li>Each participant must register before the deadline to be eligible for the hackathon.</li>
-                <li>A team can have a minimum of 2 and a maximum of 4 members.</li>
-                <li>The registration fee for each team is ₹500.</li>
-                <li>Late entries will not be entertained under any circumstances.</li>
-                <li>Participants must carry their college ID cards or any other valid identification proof.</li>
-                </ul>
-            </div>
-          </div>
-          
-          <!-- Guideline Item 3 -->
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>Accommodation & Food</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-              <ul>
-              <li>Accommodation is free for all registered participants.</li>
-              <li>Breakfast and dinner will be charged at ₹150 per person per day.</li>
-              <li>Lunch will be provided by the organizers and is organized for 2 days.</li>
-              <li>Participants are expected to use the designated accommodation responsibly; any misconduct may result in disqualification.</li>
-              </ul>
-            </div>
-          </div>       
-          <!-- Add more guideline items as needed -->
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>Event Rules</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-              <ul>
-                <li>The hackathon will be conducted in phases, and teams must submit their progress at each checkpoint.</li>
-                <li>Participants must bring their own laptops, chargers, and required materials.</li>
-                <li>Internet access will be provided but must not be used for any unethical activities.</li>
-                <li>Plagiarism and idea theft will lead to immediate disqualification.</li>
-                <li>Any misconduct, abusive language, or violation of event rules will result in expulsion from the hackathon.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>Time Management & Punctuality</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-              <ul>
-              <li>Participants must be strictly on time for each session, including project presentations and mentoring hours.</li>
-              <li>Teams arriving late may lose valuable mentorship and judging opportunities.</li>
-              <li>Participants are expected to follow the official schedule and respect deadlines.</li>
-            </div>
-          </div>
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>Judging Criteria</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-              <ul>
-              <li>Innovation & Creativity – How unique and original is the solution?</li>
-              <li>Technical Implementation – Quality of code, architecture, and technology used.</li>
-              <li>Impact & Feasibility – How useful and practical is the solution?</li>
-              <li>Presentation & Communication – How well the team presents their idea and demo.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>Brainstorming Guidelines</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-              <ul>
-                <li>Identify Real-World Problems: Focus on challenges that affect communities or industries, ensuring your solution is relevant.</li>
-                <li>User-Centric Approach: Consider the end user’s experience and design a solution that is intuitive and engaging.</li>
-                <li>Sustainability & Scalability: Think about the long-term impact and how your solution can evolve or expand in the future.</li>
-                <li>Rapid Prototyping: Quickly create prototypes to validate ideas and iterate based on feedback.</li>
-                <li>Research & Validation: Ensure that your ideas are backed by data and research to enhance credibility.</li>
-                <li>Incorporate Feedback: Actively seek and integrate feedback from mentors and peers throughout the process.</li>
-                <li>Plan for Execution: Beyond the idea stage, outline a clear plan for implementation, addressing potential challenges and resources required.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="guideline-item">
-            <button class="guideline-header">
-              <span>Code of Conduct</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="guideline-content">
-              <ul>
-              <li>All participants must maintain a professional and respectful environment.</li>
-              <li>Harassment of any kind will not be tolerated.</li>
-              <li>Teams must submit original work and credit any external sources if used.</li>
-              <li>The organizers reserve the right to modify or update rules as needed.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </section>
-    <section class="registration-process">
+  </script>
+  <section id="home" class="hero" >
       <div class="container">
-          <h2>How The Registration Process Looks Like</h2>
-          <div class="round">
-              <h3>Phase 1: Registration & Idea Submission (Online)</h3>
-              <p>Submit a PPT proposal covering the problem statement, solution, tech stack, and implementation plan.</p>
-              <p>Teams (2–4 members) must register online.</p>
-              <p><strong>Start:</strong> 31 Mar 2025, 12:00 AM IST</p>
-              <p><strong>End:</strong> 17 April 2025, 12:00 PM IST</p>
-          </div>
-          <div class="round">
-              <h3>Phase 2: Idea Evaluation & Shortlisting (Online)</h3>
-              <p>Expert panel reviews submissions based on innovation, feasibility, and impact.</p>
-              <p>Evaluation Date: April 19, 2025</p>
-              <p>Shortlisted teams receive confirmation via email.</p>
-          </div>
-          <div class="round">
-            <h3>Phase 3: Hackathon Event (Offline at GNDEC, Bidar)</h3>
-            <p>April 25–26, 2025</p>
-            <p>Day 1 (April 25): Teams begin coding, attend mentorship sessions, and work on prototypes.</p>
-            <p>Day 2 (April 26): Final development, project presentations, and judging.</p>
-            <p>Winners are announced at the closing ceremony</p>
+          <p class="presented-by">InnoTech Presents</p>
+          <h1>Department of CSE(Data Science) and Information Science and Engineering, HackFusion 2025</h1>
+          <p>25 & 26th April 2025</p>
+          <p>A 2 days Innovation Marathon at GNDEC, Bidar Karnataka</p>
+          <div style="margin-top: 30px;">
+              <a href="#register" class="btn">Register Now</a>
+              <a href="Brochure HackFusion _20250329_155522_0000.pdf" class="btn btn-outline">Download the Brochure</a>
           </div>
       </div>
-    </section>
-    <section class="sponsors">
+  </section>
+  <section class="countdown">
       <div class="container">
-          <h2>GNDECB HackFusion 2025 Is Powered by:</h2>
-          <div class="sponsor-logos">
-              <img src="logo.jpg" alt="SphereHive">
-              <img src="logo.jpg" alt="KVGCE">
+          <h2>Registration ends In</h2>
+          <div class="timer">
+              <div class="timer-box">
+                  <span id="days">00</span>
+                  <span>Days</span>
+              </div>
+              <div class="timer-box">
+                  <span id="hours">00</span>
+                  <span>Hours</span>
+              </div>
+              <div class="timer-box">
+                  <span id="minutes">00</span>
+                  <span>Minutes</span>
+              </div>
+              <div class="timer-box">
+                  <span id="seconds">00</span>
+                  <span>Seconds</span>
+              </div>
           </div>
       </div>
-    </section>
-    <section class="sponsors">
+  </section>
+  <section id="brochure" class="brochure" >
       <div class="container">
-          <h2>GNDECB HackFusion 2025 Is sponserd by:</h2>
-          <div class="sponsor-logos">
-              <img src="logo.jpg" alt="SphereHive">
-              <img src="logo.jpg" alt="KVGCE">
+          <div class="brochure-content">
+              <h2>Download the Brochure</h2>
+              <p>Get all the details you need! Download our brochure for a comprehensive guide to GNDECB HackFusion 2025, including event highlights, challenges, prizes, and participation details.</p>
+              <a href="Brochure HackFusion _20250329_155522_0000.pdf" class="btn">Download Brochure</a>
           </div>
       </div>
-    </section>
-    
-    <section class="members-container">
-      <h2 class="section-heading">Head of Departments</h2>
-      
-      <div class="members-grid">
-          <!-- Member 1 -->
-          <div class="member-card">
-              <img src="images/ds_hod.jpg" alt="Veerandra dakulg" class="member-photo">
-              <div class="member-info">
-                  <h3>Dr. Veerandra dakulg</h3>
-                  <p class="member-role">HOD CSE-Data Science</p>
-              </div>
-          </div>
-          
-          <!-- Member 2 -->
-          <div class="member-card">
-              <img src="images/hod_ise.jpg" alt="Dr.Masarath Begum" class="member-photo">
-              <div class="member-info">
-                  <h3>Dr.Masarath Begum</h3>
-                  <p class="member-role">HOD ISE Dept.</p>
-              </div>
-          </div>
-      </div>
-    </section>
-
-    <section class="members-container">
-      <h2 class="section-heading">Event Coordinators</h2>
-      
-      <div class="members-grid">
-          <!-- Member 1 -->
-          <div class="member-card">
-              <img src="images/co_ise.jpg" alt="Prof. Sangameshwar Kawdimath" class="member-photo">
-              <div class="member-info">
-                  <h3>Prof. Sangameshwar Kawdimath</h3>
-                  <p class="member-role">Assistant Professor ISE DEpt</p>
-              </div>
-          </div>
-          
-          <!-- Member 2 -->
-          <div class="member-card">
-              <img src="images/hod_ise.jpg" alt="Michael Chen" class="member-photo">
-              <div class="member-info">
-                  <h3>Michael Chen</h3>
-                  <p class="member-role">CTO</p>
-              </div>
-          </div>
-      </div>
-    </section>
-    
-    <section id="team" class="team-section">
-      <h2>Our Team</h2>
-      <div class="team-slider">
-          <!-- Team Member 1 -->
-          <div class="team-member">
-              <img src="images/4.jpg" alt="Siddharoodh" class="member-image">
-              <h3>Siddharoodh</h3>
-              <p>Lead organizer</p>
-          </div>
-          
-          <!-- Team Member 2 -->
-          <div class="team-member">
-              <img src="images/Kenneth jason.jpg" alt="kenneth " class="member-image">
-              <h3>kenneth </h3>
-              <p>co- lead & logistic </p>
-          </div>
-          
-          <!-- Team Member 3 -->
-          <div class="team-member">
-              <img src="images/sarbjot.jpg" alt="Sarbjot Singh" class="member-image">
-              <h3>Sarbjot Singh</h3>
-              <p>technical lead </p>
-          </div>
-          
-          <!-- Team Member 4 -->
-          <div class="team-member">
-              <img src="images/Nagraj motte.jpg" alt="Nagraj motte" class="member-image">
-              <h3>Nagraj motte</h3>
-              <p>Sponsorship lead</p>
-          </div>
-          <div class="team-member">
-            <img src="images/Nikhil mulge.jpg" alt="Nikhil Mulge" class="member-image">
-            <h3>Nikhil Mulge</h3>
-            <p>Poster design Lead</p>
-          </div>
-          <div class="team-member">
-            <img src="images/IMG-20250328-WA0008 - CHETAN MATHPATI.jpg" alt="Chetan " class="member-image">
-            <h3>Chetan </h3>
-            <p>Press Committee & escorting lead</p>
-          </div>
-          <div class="team-member">
-            <img src="images/Abhishek Patil.jpg" alt="Abhishek" class="member-image">
-            <h3>Abhishek </h3>
-            <p>Financial & catering lead</p>
-          </div>
-          <div class="team-member">
-            <img src="images/Shaik Nizamuddin Sufiyan.jpg" alt="Shaik Nizamuddin Sufiyan" class="member-image">
-            <h3>Shaik Nizamuddin Sufiyan</h3>
-            <p>Anchor</p>
-          </div>
-          <div class="team-member">
-            <img src="images/b santosh kumar.jpg" alt="B Santosh kumar" class="member-image">
-            <h3>B Santosh kumar</h3>
-            <p>Non-tech lead</p>
-          </div>
-          <div class="team-member">
-            <img src="images/Spoorti Udgirkar.jpg" alt="spoorti udgirkar" class="member-image">
-            <h3>spoorti udgirkar</h3>
-            <p>anchor </p>
-          </div>
-          <div class="team-member">
-            <img src="images/20250310_141646.jpg" alt="Sahana patil" class="member-image">
-            <h3>Sahana patil</h3>
-            <p>stage and program lead</p>
-          </div>
-          <div class="team-member">
-            <img src="images/Mehraj tuba.jpg" alt="Mehraj tuba" class="member-image">
-            <h3>Mehraj tuba</h3>
-            <p>registration lead</p>
-          </div>
-
-      </div>
-      
-      <div class="slider-controls">
-          <div class="slider-dot active" data-index="0"></div>
-          <div class="slider-dot" data-index="1"></div>
-          <div class="slider-dot" data-index="2"></div>
-          <div class="slider-dot" data-index="3"></div>
-          <div class="slider-dot" data-index="4"></div>
-          <div class="slider-dot" data-index="5"></div>
-          <div class="slider-dot" data-index="6"></div>
-          <div class="slider-dot" data-index="7"></div>
-          <div class="slider-dot" data-index="8"></div>
-          <div class="slider-dot" data-index="9"></div>
-          <div class="slider-dot" data-index="10"></div>
-          <div class="slider-dot" data-index="11"></div>
-
-      </div>
-    </section>
-    <section id="faq" class="faq" >
+  </section>
+  <script src="time.js"></script>
+  <section id="problem" class="problem-statement">
       <div class="container">
-          <h2>Frequently Asked Questions</h2>
-          <p class="subtitle">Got questions? Our FAQ section has you covered with quick answers to the most common inquiries.</p>
+        <h2>Problem Statement</h2>
+        
+        <div class="statement-carousel">
+          <button class="carousel-arrow prev-arrow" aria-label="Previous slide">❮</button>
           
-          <div class="faq-item">
-              <div class="faq-question">
-                  <span>What is Hack Fusion 2024?</span>
-                  <span class="toggle-icon">+</span>
+          <div class="statement-slides-container">
+            <!-- Slide 1 - Main Statement -->
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>1. Safety Detection Using Computer Vision</h3>
+                <h4>Expected Outcome:</h4>
+                <p>Develop a system that automatically detects safety hazards (e.g., without proper gear or unsafe behaviors) in real-time through image or video feeds.</p>
+                <h4>Brief:</h4>
+                <p>Develop a system that automatically detects safety hazards (e.g., without proper gear or unsafe behaviors) in real-time through image or video feeds.</p>
               </div>
-              <div class="faq-answer">
-                  <p>Hack Fusion 2024 is a national-level hackathon organized by the Innotech Committee of the ISE Department and the CSE (DS) Department at Guru Nanak Dev Engineering College (GNDEC), Bidar. It’s a two-day innovation marathon designed to tackle real-world challenges.</p>
-              </div>
-          </div>
-          
-          <div class="faq-item">
-              <div class="faq-question">
-                  <span>Who is eligible to participate?</span>
-                  <span class="toggle-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                  <p>The event is open to undergraduate, postgraduate, and Ph.D. scholars, as well as working professionals, regardless of institution or organization affiliation.</p>
-              </div>
-          </div>
-          
-          <div class="faq-item">
-              <div class="faq-question">
-                  <span>How many members can be in a team?</span>
-                  <span class="toggle-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                  <p>Each team must consist of 2 to 4 members.</p>
-              </div>
-          </div>
-          
-          <div class="faq-item">
-              <div class="faq-question">
-                  <span>How do I register and submit my idea?</span>
-                  <span class="toggle-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                  <p>Registration is completed online through our official form. Once registered, teams must submit a PPT proposal outlining their idea.</p>
-              </div>
-          </div>
-          
-          <div class="faq-item">
-              <div class="faq-question">
-                  <span>What should be included in the idea submission?</span>
-                  <span class="toggle-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                  <p>Your PPT proposal should cover the problem statement, proposed solution, technology stack, and implementation plan. Detailed guidelines will be provided upon registration.
-                  </p>
-              </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-                <span> What themes can participants choose from?</span>
-                <span class="toggle-icon">+</span>
             </div>
-            <div class="faq-answer">
-                <p>Participants can select from themes such as Security & Surveillance, E-Commerce, Generative AI, Smart Automation, and Next-Gen Communication.</p>
-            </div>
-          </div>
-          
-          <div class="faq-item">
-              <div class="faq-question">
-                  <span> What are the event logistics and schedule?</span>
-                  <span class="toggle-icon">+</span>
-              </div>
-              <div class="faq-answer">
-                  <p>The offline event will be held at GNDEC, Bidar from April 25–26, 2025. Participants will check in on the evening of April 25, spend the night onsite, and kick off the hackathon the following morning, following a structured timeline for coding, mentorship sessions, and presentations.</p>
-              </div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-question">
-                <span>What facilities and support will be provided during the event?</span>
-                <span class="toggle-icon">+</span>
-            </div>
-            <div class="faq-answer">
-                <p>Participants will have access to on-site mentorship sessions, dedicated workspaces, state-of-the-art facilities at GNDEC, and free overnight accommodation, ensuring a focused and collaborative environment throughout the hackathon.</p>
-            </div>
-        </div>
-
-      </div>
-    </section>
-    <script src="faq.js"></script>
-    <section class="site-footer">
-      <div class="footer-container">
-        <!-- Map Column -->
-        <div class="footer-column map-column">
-          <h3 class="footer-heading">Event Location</h3>
-          <div class="map-wrapper">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.7315661232155!2d77.5098374!3d17.8980011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcec6e3ee7e6bbb%3A0xbe5504c72b86fb2b!2sGuru%20Nanak%20Dev%20Engineering%20College%20Bidar!5e0!3m2!1sen!2sin!4v1743053629368!5m2!1sen!2sin" 
-              width="100%" 
-              height="250"
-              style="border:0; border-radius: 8px;"
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            <div class="address-info">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>GNDECB, Karnataka</p>
-            </div>
-          </div>
-        </div>  
-      </div>            
-    </section>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          const slider = document.querySelector('.team-slider');
-          const dots = document.querySelectorAll('.slider-dot');
-          const members = document.querySelectorAll('.team-member');
-          let currentIndex = 0;
-          let slideInterval;
-          let isDragging = false;
-          let startPos = 0;
-          let currentTranslate = 0;
-          let prevTranslate = 0;
-          let animationID;
-          
-          // Touch events for mobile swipe
-          slider.addEventListener('touchstart', touchStart);
-          slider.addEventListener('touchend', touchEnd);
-          slider.addEventListener('touchmove', touchMove);
-          
-          // Mouse events for desktop drag
-          slider.addEventListener('mousedown', touchStart);
-          slider.addEventListener('mouseup', touchEnd);
-          slider.addEventListener('mouseleave', touchEnd);
-          slider.addEventListener('mousemove', touchMove);
-          
-          function touchStart(e) {
-              if (e.type === 'touchstart') {
-                  startPos = e.touches[0].clientX;
-              } else {
-                  startPos = e.clientX;
-                  e.preventDefault(); // Prevent text selection
-              }
-              isDragging = true;
-              clearInterval(slideInterval);
-              animationID = requestAnimationFrame(animation);
-          }
-          
-          function touchEnd() {
-              isDragging = false;
-              cancelAnimationFrame(animationID);
-              
-              const movedBy = currentTranslate - prevTranslate;
-              
-              if (movedBy < -100 && currentIndex < members.length - 1) {
-                  currentIndex += 1;
-              }
-              
-              if (movedBy > 100 && currentIndex > 0) {
-                  currentIndex -= 1;
-              }
-              
-              updateSlider();
-              startSlider();
-          }
-          
-          function touchMove(e) {
-              if (isDragging) {
-                  const currentPosition = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
-                  currentTranslate = prevTranslate + currentPosition - startPos;
-              }
-          }
-          
-          function animation() {
-              setSliderPosition();
-              if (isDragging) requestAnimationFrame(animation);
-          }
-          
-          function setSliderPosition() {
-              slider.style.transform = `translateX(${currentTranslate}px)`;
-          }
-          
-          // Initialize slider position
-          updateSlider();
-          
-          // Set up automatic sliding
-          function startSlider() {
-              slideInterval = setInterval(() => {
-                  if (!isDragging) {
-                      currentIndex = (currentIndex + 1) % members.length;
-                      updateSlider();
-                  }
-              }, 3000);
-          }
-          
-          // Update slider position and active dot
-          function updateSlider() {
-              const memberWidth = members[0].offsetWidth + 10;
-              currentTranslate = -currentIndex * memberWidth;
-              prevTranslate = currentTranslate;
-              setSliderPosition();
-              
-              // Update dots
-              dots.forEach((dot, index) => {
-                  dot.classList.toggle('active', index === currentIndex);
-              });
-          }
-          
-          // Dot click event
-          dots.forEach(dot => {
-              dot.addEventListener('click', function() {
-                  currentIndex = parseInt(this.getAttribute('data-index'));
-                  updateSlider();
-                  resetInterval();
-              });
-          });
-          
-          // Reset interval when user interacts
-          function resetInterval() {
-              clearInterval(slideInterval);
-              startSlider();
-          }
-          
-          // Start the slider
-          startSlider();
-          
-          // Responsive adjustments
-          window.addEventListener('resize', function() {
-              updateSlider();
-          });
-      });
-    </script>
-    <section id="contact" class="footer">
-
-      <div class="box-container">
-
-          <div class="box">
-              <h3>find us here</h3>
-              <p>Guru Nanak Dev Engineering College Mailoor Road,Bidar,KA-585403</p>
-              <div class="share">
-                    <a href="https://discord.gg/DgGQnZfV" class="fab fa-discord" target="_blank"></a>
-                    <a href="https://x.com/Hackfusiongnd?t=vNJzm8O35dRIX41UqUCpKw&s=09" class="fab fa-twitter" target="_blank"></a>
-                    <a href="https://www.instagram.com/hackfusiongndecb25/profilecard/?igsh=dDZpNDltd2M0bjI5" class="fab fa-instagram" target="_blank"></a>
-                    <a href="https://www.linkedin.com/in/hackfusion-gndecb-62b802358/" class="fab fa-linkedin" target="_blank"></a>
-              </div>
-          </div>
-
-          <div class="box">
-              <h3>Siddharoodh</h3>
-              <p>+91- 7892787731</p>
-              <a href="https://mail.google.com/mail/" class="link"><span style="color:##9055e3c1">sidduambesange005@gmail.com</span></a>
-          </div>
-
-          <div class="box">
-              <h3>Developer</h3>
-              <p>Sarbjot Singh <br>
-              3GN22IS041<br></p>
-              <div class="share">
-                    <a href="https://www.linkedin.com/in/sarbjot-singh-b2739a25a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bv%2FTP40Y1SHmlqfDlZMdbYA%3D%3D" class="fab fa-linkedin" target="_blank"></a>
-                    <a href="https://www.facebook.com/profile.php?id=100082386281553&mibextid=ZbWKwL" class="fab fa-facebook-f" target="_blank"></a>
-                    <a href="https://github.com/Sarbjotsingh1804" class="fab fa-github" target="_blank"></a>
-                    <a href="https://www.instagram.com/sarbjotsingh479/" class="fab fa-instagram" target="_blank"></a>
-              </div>
-          </div>
-
-      </div>
-      <div class="credit">created by <span> IS&E Dept and CSE(Data Science). </span>| all rights are reserved!</div>
-    </section>
-    
-    <!-- Font Awesome for social icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const guidelineItems = document.querySelectorAll('.guideline-item');
-          
-          guidelineItems.forEach(item => {
-            const header = item.querySelector('.guideline-header');
             
-            header.addEventListener('click', () => {
-              // Close all other items
-              guidelineItems.forEach(otherItem => {
-                if(otherItem !== item) {
-                  otherItem.classList.remove('active');
-                }
-              });
-              
-              // Toggle current item
-              item.classList.toggle('active');
-            });
-          });
+            <!-- Slide 2 - Task Details -->
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>2. Propensity to Convert Using Machine Learning</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Create a predictive model that identifies which leads or customers are most likely to convert based on historical and behavioral data.</p>
+                <h4>Brief :</h4>
+                <p>Design an ML model to analyze customer behavior and demographics to predict conversion probabilities. This helps marketing teams prioritize high-value leads.</p>
+              </div>
+            </div>
+            
+            <!-- Slide 3 - Technical Requirements -->
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>3. Customer Churn Prediction Using Machine Learning</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Develop a model to forecast customer churn with high accuracy, enabling proactive retention strategies.</p>
+                <h4>Brief :</h4>
+                <p>Implement machine learning techniques to identify patterns and risk factors leading to customer churn. The aim is to empower businesses with actionable insights to improve retention.</p>
+              </div>
+            </div>
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>4. Fraud Detection in Banking</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Deploy a system that can accurately detect fraudulent transactions in real-time, reducing financial losses and protecting customers.</p>
+                <h4>Brief :</h4>
+                <p>Utilize advanced ML algorithms to analyze transaction data for anomalies. The project should help banks flag potentially fraudulent activities promptly.</p>
+              </div>
+            </div>
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>5. Sentiment Analysis Using NLP</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Create an NLP tool that classifies sentiments (positive, negative, neutral) in customer reviews, social media, or survey responses.</p>
+                <h4>Brief :</h4>
+                <p>Leverage natural language processing to analyze textual data and extract sentiment insights. This can assist businesses in understanding customer emotions and improving products or services.</p>
+              </div>
+            </div>
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>6. Job Description Creation Using Generative AI</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Develop an AI-driven system that automatically generates job descriptions tailored to specific roles and industry requirements.</p>
+                <h4>Brief :</h4>
+                <p>Employ generative AI techniques to craft precise and engaging job descriptions. The solution should streamline the recruitment process and help HR teams attract the right talent.</p>
+              </div>
+            </div>
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>7. Content Creation for E-Commerce Using Generative AI</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Produce an AI system that generates product descriptions, promotional content, and social media posts, enhancing e-commerce engagement.</p>
+                <h4>Brief :</h4>
+                <p>Utilize generative AI to create compelling and optimized content for e-commerce platforms. The tool should help businesses save time and maintain consistent quality in their marketing content.</p>
+              </div>
+            </div>
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>8. Report Generation for Various Business Units Using Generative AI</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Automate the generation of detailed business reports, summarizing key metrics and insights across different departments.</p>
+                <h4>Brief :</h4>
+                <p>Build an AI tool that aggregates data from multiple sources and generates comprehensive reports. The project aims to reduce manual effort and improve decision-making with timely insights.</p>
+              </div>
+            </div>
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>9. RAG Chat Bots for Various Industry-Specific Requirements</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Develop Retrieval-Augmented Generation (RAG) chatbots tailored for specific industries to provide precise, context-aware responses.</p>
+                <h4>Brief :</h4>
+                <p>Create chatbots that integrate retrieval techniques with generative models to offer industry-specific solutions. These bots should enhance customer support and provide accurate information in specialized fields.</p>
+              </div>
+            </div>
+            <div class="statement-slide active">
+              <div class="statement-content">
+                <h3>10. Review Classification Using AI</h3>
+                <h4>Expected Outcome :</h4>
+                <p>Implement an AI solution that classifies reviews into categories (e.g., positive, negative, neutral) and extracts key themes or issues.</p>
+                <h4>Brief :</h4>
+                <p>Design a system that automates the classification of customer reviews and identifies critical trends. The solution helps businesses quickly understand feedback and improve customer satisfaction.</p>
+              </div>
+            </div>
+            
+          </div>
           
-          // Optional: Open first item by default
-          if(guidelineItems.length > 0) {
-            guidelineItems[0].classList.add('active');
-          }
+          <button class="carousel-arrow next-arrow" aria-label="Next slide">❯</button>
+          
+          <!-- Navigation Dots -->
+          <div class="statement-dots">
+            <span class="statement-dot active" data-slide="0"></span>
+            <span class="statement-dot" data-slide="1"></span>
+            <span class="statement-dot" data-slide="2"></span>
+            <span class="statement-dot" data-slide="3"></span>
+            <span class="statement-dot" data-slide="4"></span>
+            <span class="statement-dot" data-slide="5"></span>
+            <span class="statement-dot" data-slide="6"></span>
+            <span class="statement-dot" data-slide="7"></span>
+            <span class="statement-dot" data-slide="8"></span>
+            <span class="statement-dot" data-slide="9"></span>
+            <span class="statement-dot" data-slide="10"></span>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const slides = document.querySelectorAll('.statement-slide');
+      const dots = document.querySelectorAll('.statement-dot');
+      const prevBtn = document.querySelector('.prev-arrow');
+      const nextBtn = document.querySelector('.next-arrow');
+      let currentSlide = 0;
+  
+      // Function to show a specific slide
+      function showSlide(index) {
+      // Hide all slides
+      slides.forEach(slide => slide.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      // Ensure index stays within bounds
+      if(index < 0) {
+          index = slides.length - 1;
+      } else if(index >= slides.length) {
+          index = 0;
+      }
+      
+      // Show the selected slide
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentSlide = index;
+      }
+  
+      // Click event for dots
+      dots.forEach(dot => {
+      dot.addEventListener('click', function() {
+          const slideIndex = parseInt(this.getAttribute('data-slide'));
+          showSlide(slideIndex);
+      });
+      });
+  
+      // Previous button click
+      prevBtn.addEventListener('click', () => {
+      showSlide(currentSlide - 1);
+      });
+  
+      // Next button click
+      nextBtn.addEventListener('click', () => {
+      showSlide(currentSlide + 1);
+      });
+  
+      // Initialize first slide
+      showSlide(0);
+      
+      // Optional: Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+      if(e.key === 'ArrowLeft') {
+          showSlide(currentSlide - 1);
+      } else if(e.key === 'ArrowRight') {
+          showSlide(currentSlide + 1);
+      }
+      });
+  });
+  </script>
+  <section id="prizes" class="prizes" >
+      <div class="container">
+          <h2>Prizes & Rewards</h2>
+          <div class="prize-grid">
+              <div class="prize-card">
+                  <div class="prize-amount">₹7000</div>
+                  <p>First Prize</p>
+              </div>
+              <div class="prize-card">
+                  <div class="prize-amount">₹5000</div>
+                  <p>Second Prize</p>
+              </div>
+              <div class="prize-card">
+                  <div class="prize-amount">₹3000</div>
+                  <p>Third Prize</p>
+              </div>
+          </div>
+          <p style="margin-top: 30px; font-size: 0.95rem; padding: 0 15px; color: white;">Get a designated participation certificate to showcase your skills and gain exclusive networking opportunities with mentors, and like-minded innovators.</p>
+      </div>
+  </section>
+  <section id="guidelines" class="guidelines-section">
+      <div class="container">
+        <h2>Event Guidelines</h2>
+        
+        <!-- Guideline Item 1 -->
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>General Information</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+            <p>The hackathon is open to all college students nationwide. Participants must be currently enrolled in an accredited educational institution.</p>
+            <ul>
+              <li>The hackathon will be a 2-day event, not a continuous 24 or 12-hour hackathon.</li>
+              <li>Participants must vacate the venue at night and move to the provided accommodation.</li>
+              <li>Registration opens on March 29th, 2025.</li>
+              <li>Problem statements will be released on March 30th, 2025, and teams will have time to work on their solutions until April 18th, 2025.</li>
+              <li>The hackathon will be conducted offline at the designated venue.</li>
+              <li>Teams must strictly adhere to the timeline and schedule set by the organizing committee.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Guideline Item 2 -->
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>Registration & Participation</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+              <ul>
+              <li>Each participant must register before the deadline to be eligible for the hackathon.</li>
+              <li>A team can have a minimum of 2 and a maximum of 4 members.</li>
+              <li>The registration fee for each team is ₹500.</li>
+              <li>Late entries will not be entertained under any circumstances.</li>
+              <li>Participants must carry their college ID cards or any other valid identification proof.</li>
+              </ul>
+          </div>
+        </div>
+        
+        <!-- Guideline Item 3 -->
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>Accommodation & Food</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+            <ul>
+            <li>Accommodation is free for all registered participants.</li>
+            <li>Breakfast and dinner will be charged at ₹150 per person per day.</li>
+            <li>Lunch will be provided by the organizers and is organized for 2 days.</li>
+            <li>Participants are expected to use the designated accommodation responsibly; any misconduct may result in disqualification.</li>
+            </ul>
+          </div>
+        </div>       
+        <!-- Add more guideline items as needed -->
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>Event Rules</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+            <ul>
+              <li>The hackathon will be conducted in phases, and teams must submit their progress at each checkpoint.</li>
+              <li>Participants must bring their own laptops, chargers, and required materials.</li>
+              <li>Internet access will be provided but must not be used for any unethical activities.</li>
+              <li>Plagiarism and idea theft will lead to immediate disqualification.</li>
+              <li>Any misconduct, abusive language, or violation of event rules will result in expulsion from the hackathon.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>Time Management & Punctuality</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+            <ul>
+            <li>Participants must be strictly on time for each session, including project presentations and mentoring hours.</li>
+            <li>Teams arriving late may lose valuable mentorship and judging opportunities.</li>
+            <li>Participants are expected to follow the official schedule and respect deadlines.</li>
+          </div>
+        </div>
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>Judging Criteria</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+            <ul>
+            <li>Innovation & Creativity – How unique and original is the solution?</li>
+            <li>Technical Implementation – Quality of code, architecture, and technology used.</li>
+            <li>Impact & Feasibility – How useful and practical is the solution?</li>
+            <li>Presentation & Communication – How well the team presents their idea and demo.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>Brainstorming Guidelines</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+            <ul>
+              <li>Identify Real-World Problems: Focus on challenges that affect communities or industries, ensuring your solution is relevant.</li>
+              <li>User-Centric Approach: Consider the end user’s experience and design a solution that is intuitive and engaging.</li>
+              <li>Sustainability & Scalability: Think about the long-term impact and how your solution can evolve or expand in the future.</li>
+              <li>Rapid Prototyping: Quickly create prototypes to validate ideas and iterate based on feedback.</li>
+              <li>Research & Validation: Ensure that your ideas are backed by data and research to enhance credibility.</li>
+              <li>Incorporate Feedback: Actively seek and integrate feedback from mentors and peers throughout the process.</li>
+              <li>Plan for Execution: Beyond the idea stage, outline a clear plan for implementation, addressing potential challenges and resources required.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="guideline-item">
+          <button class="guideline-header">
+            <span>Code of Conduct</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="guideline-content">
+            <ul>
+            <li>All participants must maintain a professional and respectful environment.</li>
+            <li>Harassment of any kind will not be tolerated.</li>
+            <li>Teams must submit original work and credit any external sources if used.</li>
+            <li>The organizers reserve the right to modify or update rules as needed.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="registration-process">
+    <div class="container">
+        <h2>How The Registration Process Looks Like</h2>
+        <div class="round">
+            <h3>Phase 1: Registration & Idea Submission (Online)</h3>
+            <p>Submit a PPT proposal covering the problem statement, solution, tech stack, and implementation plan.</p>
+            <p>Teams (2–4 members) must register online.</p>
+            <p><strong>Start:</strong> 31 Mar 2025, 12:00 AM IST</p>
+            <p><strong>End:</strong> 17 April 2025, 12:00 PM IST</p>
+        </div>
+        <div class="round">
+            <h3>Phase 2: Idea Evaluation & Shortlisting (Online)</h3>
+            <p>Expert panel reviews submissions based on innovation, feasibility, and impact.</p>
+            <p>Evaluation Date: April 19, 2025</p>
+            <p>Shortlisted teams receive confirmation via email.</p>
+        </div>
+        <div class="round">
+          <h3>Phase 3: Hackathon Event (Offline at GNDEC, Bidar)</h3>
+          <p>April 25–26, 2025</p>
+          <p>Day 1 (April 25): Teams begin coding, attend mentorship sessions, and work on prototypes.</p>
+          <p>Day 2 (April 26): Final development, project presentations, and judging.</p>
+          <p>Winners are announced at the closing ceremony</p>
+        </div>
+    </div>
+  </section>
+  <section class="sponsors">
+    <div class="container">
+        <h2>GNDECB HackFusion 2025 Is Powered by:</h2>
+        <div class="sponsor-logos">
+            <img src="logo.jpg" alt="SphereHive">
+            <img src="logo.jpg" alt="KVGCE">
+        </div>
+    </div>
+  </section>
+  <section class="sponsors">
+    <div class="container">
+        <h2>GNDECB HackFusion 2025 Is sponserd by:</h2>
+        <div class="sponsor-logos">
+            <img src="logo.jpg" alt="SphereHive">
+            <img src="logo.jpg" alt="KVGCE">
+        </div>
+    </div>
+  </section>
+  
+  <section class="members-container">
+    <h2 class="section-heading">Head of Departments</h2>
+    
+    <div class="members-grid">
+        <!-- Member 1 -->
+        <div class="member-card">
+            <img src="images/ds_hod.jpg" alt="Veerandra dakulg" class="member-photo">
+            <div class="member-info">
+                <h3>Dr. Veerandra dakulg</h3>
+                <p class="member-role">HOD CSE-Data Science</p>
+            </div>
+        </div>
+        
+        <!-- Member 2 -->
+        <div class="member-card">
+            <img src="images/hod_ise.jpg" alt="Dr.Masarath Begum" class="member-photo">
+            <div class="member-info">
+                <h3>Dr.Masarath Begum</h3>
+                <p class="member-role">HOD ISE Dept.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="members-container">
+    <h2 class="section-heading">Event Coordinators</h2>
+    
+    <div class="members-grid">
+        <!-- Member 1 -->
+        <div class="member-card">
+            <img src="images/co_ise.jpg" alt="Prof. Sangameshwar Kawdimath" class="member-photo">
+            <div class="member-info">
+                <h3>Prof. Sangameshwar Kawdimath</h3>
+                <p class="member-role">Assistant Professor ISE DEpt</p>
+            </div>
+        </div>
+        
+        <!-- Member 2 -->
+        <div class="member-card">
+            <img src="images/hod_ise.jpg" alt="Michael Chen" class="member-photo">
+            <div class="member-info">
+                <h3>Michael Chen</h3>
+                <p class="member-role">CTO</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <section id="team" class="team-section">
+    <h2>Our Team</h2>
+    <div class="team-slider">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <img src="images/4.jpg" alt="Siddharoodh" class="member-image">
+            <h3>Siddharoodh</h3>
+            <p>Lead organizer</p>
+        </div>
+        
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <img src="images/Kenneth jason.jpg" alt="kenneth " class="member-image">
+            <h3>kenneth </h3>
+            <p>co- lead & logistic </p>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <img src="images/sarbjot.jpg" alt="Sarbjot Singh" class="member-image">
+            <h3>Sarbjot Singh</h3>
+            <p>technical lead </p>
+        </div>
+        
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <img src="images/Nagraj motte.jpg" alt="Nagraj motte" class="member-image">
+            <h3>Nagraj motte</h3>
+            <p>Sponsorship lead</p>
+        </div>
+        <div class="team-member">
+          <img src="images/Nikhil mulge.jpg" alt="Nikhil Mulge" class="member-image">
+          <h3>Nikhil Mulge</h3>
+          <p>Poster design Lead</p>
+        </div>
+        <div class="team-member">
+          <img src="images/IMG-20250328-WA0008 - CHETAN MATHPATI.jpg" alt="Chetan " class="member-image">
+          <h3>Chetan </h3>
+          <p>Press Committee & escorting lead</p>
+        </div>
+        <div class="team-member">
+          <img src="images/Abhishek Patil.jpg" alt="Abhishek" class="member-image">
+          <h3>Abhishek </h3>
+          <p>Financial & catering lead</p>
+        </div>
+        <div class="team-member">
+          <img src="images/Shaik Nizamuddin Sufiyan.jpg" alt="Shaik Nizamuddin Sufiyan" class="member-image">
+          <h3>Shaik Nizamuddin Sufiyan</h3>
+          <p>Anchor</p>
+        </div>
+        <div class="team-member">
+          <img src="images/b santosh kumar.jpg" alt="B Santosh kumar" class="member-image">
+          <h3>B Santosh kumar</h3>
+          <p>Non-tech lead</p>
+        </div>
+        <div class="team-member">
+          <img src="images/Spoorti Udgirkar.jpg" alt="spoorti udgirkar" class="member-image">
+          <h3>spoorti udgirkar</h3>
+          <p>anchor </p>
+        </div>
+        <div class="team-member">
+          <img src="images/20250310_141646.jpg" alt="Sahana patil" class="member-image">
+          <h3>Sahana patil</h3>
+          <p>stage and program lead</p>
+        </div>
+        <div class="team-member">
+          <img src="images/Mehraj tuba.jpg" alt="Mehraj tuba" class="member-image">
+          <h3>Mehraj tuba</h3>
+          <p>registration lead</p>
+        </div>
+
+    </div>
+    
+    <div class="slider-controls">
+        <div class="slider-dot active" data-index="0"></div>
+        <div class="slider-dot" data-index="1"></div>
+        <div class="slider-dot" data-index="2"></div>
+        <div class="slider-dot" data-index="3"></div>
+        <div class="slider-dot" data-index="4"></div>
+        <div class="slider-dot" data-index="5"></div>
+        <div class="slider-dot" data-index="6"></div>
+        <div class="slider-dot" data-index="7"></div>
+        <div class="slider-dot" data-index="8"></div>
+        <div class="slider-dot" data-index="9"></div>
+        <div class="slider-dot" data-index="10"></div>
+        <div class="slider-dot" data-index="11"></div>
+
+    </div>
+  </section>
+  <section id="faq" class="faq" >
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="subtitle">Got questions? Our FAQ section has you covered with quick answers to the most common inquiries.</p>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What is Hack Fusion 2024?</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Hack Fusion 2024 is a national-level hackathon organized by the Innotech Committee of the ISE Department and the CSE (DS) Department at Guru Nanak Dev Engineering College (GNDEC), Bidar. It’s a two-day innovation marathon designed to tackle real-world challenges.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>Who is eligible to participate?</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>The event is open to undergraduate, postgraduate, and Ph.D. scholars, as well as working professionals, regardless of institution or organization affiliation.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How many members can be in a team?</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Each team must consist of 2 to 4 members.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>How do I register and submit my idea?</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Registration is completed online through our official form. Once registered, teams must submit a PPT proposal outlining their idea.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>What should be included in the idea submission?</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Your PPT proposal should cover the problem statement, proposed solution, technology stack, and implementation plan. Detailed guidelines will be provided upon registration.
+                </p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+              <span> What themes can participants choose from?</span>
+              <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+              <p>Participants can select from themes such as Security & Surveillance, E-Commerce, Generative AI, Smart Automation, and Next-Gen Communication.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">
+                <span> What are the event logistics and schedule?</span>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>The offline event will be held at GNDEC, Bidar from April 25–26, 2025. Participants will check in on the evening of April 25, spend the night onsite, and kick off the hackathon the following morning, following a structured timeline for coding, mentorship sessions, and presentations.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+              <span>What facilities and support will be provided during the event?</span>
+              <span class="toggle-icon">+</span>
+          </div>
+          <div class="faq-answer">
+              <p>Participants will have access to on-site mentorship sessions, dedicated workspaces, state-of-the-art facilities at GNDEC, and free overnight accommodation, ensuring a focused and collaborative environment throughout the hackathon.</p>
+          </div>
+      </div>
+
+    </div>
+  </section>
+  <script src="faq.js"></script>
+  <section class="site-footer">
+    <div class="footer-container">
+      <!-- Map Column -->
+      <div class="footer-column map-column">
+        <h3 class="footer-heading">Event Location</h3>
+        <div class="map-wrapper">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.7315661232155!2d77.5098374!3d17.8980011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcec6e3ee7e6bbb%3A0xbe5504c72b86fb2b!2sGuru%20Nanak%20Dev%20Engineering%20College%20Bidar!5e0!3m2!1sen!2sin!4v1743053629368!5m2!1sen!2sin" 
+            width="100%" 
+            height="250"
+            style="border:0; border-radius: 8px;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="address-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>GNDECB, Karnataka</p>
+          </div>
+        </div>
+      </div>  
+    </div>            
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const slider = document.querySelector('.team-slider');
+        const dots = document.querySelectorAll('.slider-dot');
+        const members = document.querySelectorAll('.team-member');
+        let currentIndex = 0;
+        let slideInterval;
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
+        
+        // Touch events for mobile swipe
+        slider.addEventListener('touchstart', touchStart);
+        slider.addEventListener('touchend', touchEnd);
+        slider.addEventListener('touchmove', touchMove);
+        
+        // Mouse events for desktop drag
+        slider.addEventListener('mousedown', touchStart);
+        slider.addEventListener('mouseup', touchEnd);
+        slider.addEventListener('mouseleave', touchEnd);
+        slider.addEventListener('mousemove', touchMove);
+        
+        function touchStart(e) {
+            if (e.type === 'touchstart') {
+                startPos = e.touches[0].clientX;
+            } else {
+                startPos = e.clientX;
+                e.preventDefault(); // Prevent text selection
+            }
+            isDragging = true;
+            clearInterval(slideInterval);
+            animationID = requestAnimationFrame(animation);
+        }
+        
+        function touchEnd() {
+            isDragging = false;
+            cancelAnimationFrame(animationID);
+            
+            const movedBy = currentTranslate - prevTranslate;
+            
+            if (movedBy < -100 && currentIndex < members.length - 1) {
+                currentIndex += 1;
+            }
+            
+            if (movedBy > 100 && currentIndex > 0) {
+                currentIndex -= 1;
+            }
+            
+            updateSlider();
+            startSlider();
+        }
+        
+        function touchMove(e) {
+            if (isDragging) {
+                const currentPosition = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+                currentTranslate = prevTranslate + currentPosition - startPos;
+            }
+        }
+        
+        function animation() {
+            setSliderPosition();
+            if (isDragging) requestAnimationFrame(animation);
+        }
+        
+        function setSliderPosition() {
+            slider.style.transform = `translateX(${currentTranslate}px)`;
+        }
+        
+        // Initialize slider position
+        updateSlider();
+        
+        // Set up automatic sliding
+        function startSlider() {
+            slideInterval = setInterval(() => {
+                if (!isDragging) {
+                    currentIndex = (currentIndex + 1) % members.length;
+                    updateSlider();
+                }
+            }, 3000);
+        }
+        
+        // Update slider position and active dot
+        function updateSlider() {
+            const memberWidth = members[0].offsetWidth + 10;
+            currentTranslate = -currentIndex * memberWidth;
+            prevTranslate = currentTranslate;
+            setSliderPosition();
+            
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+        
+        // Dot click event
+        dots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                currentIndex = parseInt(this.getAttribute('data-index'));
+                updateSlider();
+                resetInterval();
+            });
         });
-    </script>   
-    <div id="particles-js"></div>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+        
+        // Reset interval when user interacts
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startSlider();
+        }
+        
+        // Start the slider
+        startSlider();
+        
+        // Responsive adjustments
+        window.addEventListener('resize', function() {
+            updateSlider();
+        });
+    });
+  </script>
+  <section id="contact" class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>find us here</h3>
+            <p>Guru Nanak Dev Engineering College Mailoor Road,Bidar,KA-585403</p>
+            <div class="share">
+                  <a href="https://discord.gg/DgGQnZfV" class="fab fa-discord" target="_blank"></a>
+                  <a href="https://x.com/Hackfusiongnd?t=vNJzm8O35dRIX41UqUCpKw&s=09" class="fab fa-twitter" target="_blank"></a>
+                  <a href="https://www.instagram.com/hackfusiongndecb25/profilecard/?igsh=dDZpNDltd2M0bjI5" class="fab fa-instagram" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/hackfusion-gndecb-62b802358/" class="fab fa-linkedin" target="_blank"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Contact Us</h3>
+            <p>Siddharoodh</p>
+            <p>+91- 7892787731</p>
+            <a href="https://mail.google.com/mail/" class="link"><span style="color:##9055e3c1">sidduambesange005@gmail.com</span></a>
+            <p>Kenneth Jason</p>
+            <p>+91-76191 07621</p>
+
+        </div>
+        <div class="box">
+            <h3>Developer</h3>
+            <p>Sarbjot Singh <br>
+            3GN22IS041<br></p>
+            <div class="share">
+                  <a href="https://www.linkedin.com/in/sarbjot-singh-b2739a25a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bv%2FTP40Y1SHmlqfDlZMdbYA%3D%3D" class="fab fa-linkedin" target="_blank"></a>
+                  <a href="https://www.facebook.com/profile.php?id=100082386281553&mibextid=ZbWKwL" class="fab fa-facebook-f" target="_blank"></a>
+                  <a href="https://github.com/Sarbjotsingh1804" class="fab fa-github" target="_blank"></a>
+                  <a href="https://www.instagram.com/sarbjotsingh479/" class="fab fa-instagram" target="_blank"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="credit">created by <span> IS&E Dept and CSE(Data Science). </span>| all rights are reserved!</div>
+  </section>
+  
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const guidelineItems = document.querySelectorAll('.guideline-item');
+        
+        guidelineItems.forEach(item => {
+          const header = item.querySelector('.guideline-header');
+          
+          header.addEventListener('click', () => {
+            // Close all other items
+            guidelineItems.forEach(otherItem => {
+              if(otherItem !== item) {
+                otherItem.classList.remove('active');
+              }
+            });
+            
+            // Toggle current item
+            item.classList.toggle('active');
+          });
+        });
+        
+        // Optional: Open first item by default
+        if(guidelineItems.length > 0) {
+          guidelineItems[0].classList.add('active');
+        }
+      });
+  </script>   
+  <div id="particles-js"></div>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
 </body>
+</html>
